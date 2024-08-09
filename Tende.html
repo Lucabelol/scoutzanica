@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #result {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .correct {
+      color: green;
+    }
+
+    .incorrect {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <label for="userInput">Inserisci una frase:</label>
+  <textarea id="userInput" rows="4" cols="50"></textarea>
+  <button onclick="checkPhrase()">Verifica</button>
+  <div id="result"></div>
+
+  <script>
+    function checkPhrase() {
+      var userInput = document.getElementById('userInput').value;
+      var resultElement = document.getElementById('result');
+
+      if (userInput.toLowerCase() === 'stupido') {
+        resultElement.innerText = 'Corretto!';
+        resultElement.className = 'correct';
+      } else {
+        resultElement.innerText = 'Errato =(';
+        resultElement.className = 'incorrect';
+      }
+    }
+  </script>
+</body>
+</html>

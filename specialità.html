@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    
+    a {
+      text-decoration: none;
+      color: #ff5100;
+    }
+
+    a:hover {
+      color: #ff5100c1;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: 20px auto;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .circle {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto 10px;
+      position: relative;
+    }
+
+    .circle img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .text {
+      font-size: 14px;
+    }
+
+        .faq-container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .question {
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .answer {
+      display: none;
+      margin-top: 10px;
+    }
+
+    .answer.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align:center">Cerchi una specialità? la troverai quì!!</h1>
+    <table>
+    <tr>
+    <td></td>
+    <td>Bordo rosso</td>
+    <td>Bordo verde</td>
+    <td>Bordo giallo</td>
+    <td>Bordo blu</td>
+    </tr>
+    <tr>
+      <td>Sfondo verde</td>
+      <td>
+      <a href="#section1">Amicizia internazionale</a><br><br>
+      <a href="#section2">Ambiente</a><br><br>
+      <a href="#section3">Guida</a><br><br>
+      <a href="#section4">Ambiente acquatico</a>
+      </td>
+      <td>
+      <a href="#section11">Hebertismo</a><br><br>
+      <a href="#section12">Orientamento</a><br><br>
+      <a href="#section13">Esplorazione</a><br><br>
+      <a href="#section14">Abilita' acquatiche</a>
+      </td>
+      <td>
+      <a href="#section21">Vita da campo</a><br><br>
+      <a href="#section22">Pionerismo</a><br><br>
+      <a href="#section23">Fuochista</a><br><br>
+      <a href="#section24">Skipper</a>
+      </td>
+      <td>
+      <a href="#section31">Animazione</a><br><br>
+      <a href="#section32">Avventura</a><br><br>
+      <a href="#section33">Primo soccorso</a><br><br>
+      <a href="#section34">Meteo</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Sfondo giallo</td>
+      <td>
+      <a href="#section5">Agora'</a><br><br>
+      <a href="#section6">Impegno sociale</a><br><br>
+      <a href="#section7">Conservazione mondiale</a><br><br>
+      <a href="#section8">Interprete</a><br><br>
+      <a href="#section9">Folklore</a><br><br>
+      <a href="#section10">Legislatore nauitco</a>
+      </td>
+      <td>
+      <a href="#section15">Giochi di squadra</a><br><br>
+      <a href="#section16">Nuoto</a><br><br>
+      <a href="#section17">Ciclista</a><br><br>
+      <a href="#section18">Difesa personale</a><br><br>
+      <a href="#section19">Mimica</a><br><br>
+      <a href="#section20">Vogatore</a>
+      </td>
+      <td>
+      <a href="#section25">Artista</a><br><br>
+      <a href="#section26">Fotografia</a><br><br>
+      <a href="#section27">Modellismo</a><br><br>
+      <a href="#section28">Artigianato</a><br><br>
+      <a href="#section29">Scienze di laboratorio</a><br><br>
+      <a href="#section30">Carpentiere navale</a>
+      </td>
+      <td>
+      <a href="#section35">Giornalismo</a><br><br>
+      <a href="#section36">Amante della musica</a><br><br>
+      <a href="#section37">Collezzionismo</a><br><br>
+      <a href="#section38">Informatica</a><br><br>
+      <a href="#section39">Lettura</a><br><br>
+      <a href="#section40">Astronomo</a>
+      </td>
+    </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <table>
+    <tr>
+      <th>Immagine specialita'</th>
+      <th>Nome specialita'</th>
+    </tr>
+    <tr>
+      <td>
+        <div class="circle" id="section1">
+          <img src="https://cdn.storeden.net/secache/63bff8a65fb8e0d890c56617" alt="Immagine rotonda">
+        </div>
+      </td>
+      <td class="text"><a href="amicizia.html">Amicizia internazionale</a></td>
+    </tr>
+        <tr>
+      <td>
+        <div class="circle" id="section2">
+          <img src="https://cdn.storeden.net/secache/63bff8a400f220b925c86b85" alt="Immagine rotonda">
+        </div>
+      </td>
+      <td class="text"><a href="Ambiente.html">Ambiente</a></td>
+    </tr>
+        <tr>
+      <td>
+        <div class="circle" id="section3">
+          <img src="https://cdn.storeden.net/secache/63bff8ba00f2201925c86b8a" alt="Immagine rotonda">
+        </div>
+      </td>
+      <td class="text"><a href="Guida.html">Guida</a></td>
+    </tr>
+        <tr>
+      <td>
+        <div class="circle" id="section4">
+          <img src="https://cdn.storeden.net/secache/63bff8a15fb8e0a791c56617" alt="Immagine rotonda">
+        </div>
+      </td>
+      <td class="text"><a href="Ambiente acquatico.html">Ambiente acquatico</a></td>
+    </tr>
+        <tr>
+      <td>
+        <div class="circle" id="section5">
+          <img src="https://cdn.storeden.net/secache/63bff857be7ea081ed2736df" alt="Immagine rotonda">
+        </div>
+      </td>
+      <td class="text"><a href="agorà.html">Agorà</a></td>
+    </tr>
+        <tr>
+      <td>
+        <div class="circle" id="section6">
+          <img src="https://cdn.storeden.net/secache/63bff87abe7ea08ce82736eb" alt="Immagine rotonda">
+        </div>
+      </td>
+      <td class="text"><a href="Impegno sociale.html">Impegno sociale</a></td>
+    </tr>
+        <tr>
+      <td>
+        <div class="circle" id="section7">
+          <img src="https://cdn.storeden.net/secache/63bff86b5fb8e0588dc5661e" alt="Immagine rotonda">
+        </div>
+      </td>
+      <td class="text"><a href="conservazione mondiale.html">Conservazione mondiale</a></td>
+    </tr>
+        <tr>
+      <td>
+        <div class="circle" id="section8">
+          <img src="https://cdn.storeden.net/secache/63bff87f00f2201227c86b84" alt="Immagine rotonda">
+        </div>
+      </td>
+      <td class="text"><a href="Interprete.html">Interprete</a></td>
+    </tr>
+        <tr>
+      <td>
+        <div class="circle" id="section9">
+          <img src="https://cdn.storeden.net/secache/63bff8705fb8e06a8dc5661a" alt="Immagine rotonda">
+        </div>
+      </td>
+      <td class="text"><a href="Folklore.html">Folklore</a></td>
+    </tr>
+      <tr>
+      <td>
+        <div class="circle" id="section10">
+          <img src="https://cdn.storeden.net/secache/63bff88bbe7ea0c3ee2736db" alt="Immagine rotonda">
+        </div>
+      </td>
+      <td class="text"><a href="legislatore nautico.html">Legislatore nautico</a></td>
+    </tr>
+      <tr>
+      <td>
+        <div class="circle" id="section11">
+          <img src="https://cdn.storeden.net/secache/63bff8bd00f2201925c86b8f" alt="Immagine rotonda">
+        </div>
+      </td>
+      <td class="text"><a href="Hebertismo.html">Hebertismo</a></td>
+    </tr>
+      <tr>
+      <td>
+        <div class="circle" id="section12">
+          <img src="https://cdn.storeden.net/secache/63bff8c2be7ea0a1f12736dd" alt="Immagine rotonda">
+        </div>
+      </td>
+      <td class="text"><a href="Orientamento.html">Orientamento</a></td>
+    </tr>
+      <tr>
+      <td>
+        <div class="circle" id="section13">
+          <img src="https://cdn.storeden.net/secache/63bff8b25fb8e0ed8bc5662b" alt="Immagine rotonda">
+        </div>
+      </td>
+      <td class="text"><a href="Esplorazione.html">Esplorazione</a></td>
+    </tr>
+      <tr>
+      <td>
+        <div class="circle" id="section14">
+          <img src="https://cdn.storeden.net/secache/63bff89e5fb8e05a91c56616" alt="Immagine rotonda">
+        </div>
+      </td>
+      <td class="text"><a href="abilità acquatiche.html">abilità acquatiche</a></td>
+    </tr>
+      <tr>
+      <td>
+        <div class="circle" id="section15">
+          <img src="https://cdn.storeden.net/secache/63bff8745fb8e0cf90c56616" alt="Immagine rotonda">
+        </div>
+      </td>
+      <td class="text"><a href="giochi di squadra.html">Giochi di squadra</a></td>
+    </tr>
+      <tr>
+      <td>
+        <div class="circle" id="section16">
+          <img src="https://cdn.storeden.net/secache/63bff896be7ea09bf12736d3" alt="Immagine rotonda">
+        </div>
+      </td>
+      <td class="text"><a href="Nuoto.html">Nuoto</a></td>
+    </tr>
+      <tr>
+      <td>
+        <div class="circle" id="section17">
+          <img src="https://cdn.storeden.net/secache/63bff8665fb8e0e58ec56618" alt="Immagine rotonda">
+        </div>
+      </td>
+      <td class="text"><a href="Ciclista.html">Ciclista</a></td>
+    </tr>
+      <tr>
+      <td>
+        <div class="circle" id="section18">
+          <img src="https://cdn.storeden.net/secache/63bff86d5fb8e03d8ec5661c" alt="Immagine rotonda">
+        </div>
+      </td>
+      <td class="text"><a href="difesa personale.html">Difesa personale</a></td>
+    </tr>
+      <tr>
+      <td>
+        <div class="circle" id="section19">
+          <img src="https://cdn.storeden.net/secache/63bff89000f2204629c86b79" alt="Immagine rotonda">
+        </div>
+      </td>
+      <td class="text"><a href="Mimica.html">Mimica</a></td>
+    </tr>
+      <tr>
+      <td>
+        <div class="circle" id="section20">
+          <img src="https://cdn.storeden.net/secache/63bff89c00f220b925c86b80" alt="Immagine rotonda">
+        </div>
+      </td>
+      <td class="text"><a href="Vogatore.html">Vogatore</a></td>
+    </tr>
+    <tr>
+      <td>
+        <div class="circle" id="section21">
+          <img src="https://cdn.storeden.net/secache/63bff8d0be7ea0dff32736d3" alt="Immagine rotonda">
+        </div>
+      </td>
+      <td class="text"><a href="vita da campo.html">Vita da campo</a></td>
+    </tr>
+        <tr>
+      <td>
+        <div class="circle" id="section22">
+          <img src="https://cdn.storeden.net/secache/63bff8c900f220612bc86b79" alt="Immagine rotonda">
+        </div>
+      </td>
+      <td class="text"><a href="Pionerismo.html">Pionerismo</a></td>
+    </tr>
+        <tr>
+      <td>
+        <div class="circle" id="section23">
+          <img src="https://cdn.storeden.net/secache/63bff8b4be7ea026e92736ea" alt="Immagine rotonda">
+        </div>
+      </td>
+      <td class="text"><a href="Fuochista.html">Fuochista</a></td>
+    </tr>
+        <tr>
+      <td>
+        <div class="circle" id="section24">
+          <img src="https://cdn.storeden.net/secache/63bff8cd5fb8e02e93c5661d" alt="Immagine rotonda">
+        </div>
+      </td>
+      <td class="text"><a href="Skipper.html">Skipper</a></td>
+    </tr>
+        <tr>
+      <td>
+        <div class="circle" id="section25">
+          <img src="https://cdn.storeden.net/secache/63bff85ebe7ea012ea2736de" alt="Immagine rotonda">
+        </div>
+      </td>
+      <td class="text"><a href="Artista.html">Artista</a></td>
+    </tr>
+        <tr>
+      <td>
+        <div class="circle" id="section26">
+          <img src="https://cdn.storeden.net/secache/63bff8725fb8e0cb8dc5661b" alt="Immagine rotonda">
+        </div>
+      </td>
+      <td class="text"><a href="Fotografia.html">Fotografia</a></td>
+    </tr>
+        <tr>
+      <td>
+        <div class="circle" id="section27">
+          <img src="https://cdn.storeden.net/secache/63bff8935fb8e05891c56616" alt="Immagine rotonda">
+        </div>
+      </td>
+      <td class="text"><a href="Modellismo.html">Modellismo</a></td>
+    </tr>
+        <tr>
+      <td>
+        <div class="circle" id="section28">
+          <img src="https://cdn.storeden.net/secache/63bff85c5fb8e0878ec56621" alt="Immagine rotonda">
+        </div>
+      </td>
+      <td class="text"><a href="Artigianato.html">Artigianato</a></td>
+    </tr>
+        <tr>
+      <td>
+        <div class="circle" id="section29">
+          <img src="https://cdn.storeden.net/secache/63bff899be7ea03bef2736d8" alt="Immagine rotonda">
+        </div>
+      </td>
+      <td class="text"><a href="scienze di laboratorio.html">Scienze di laboratorio</a></td>
+    </tr>
+      <tr>
+      <td>
+        <div class="circle" id="section30">
+          <img src="https://cdn.storeden.net/secache/63bff8635fb8e08e8ec56618" alt="Immagine rotonda">
+        </div>
+      </td>
+      <td class="text"><a href="carpentiere navale.html">Carpentiere navale</a></td>
+    </tr>
+      <tr>
+      <td>
+        <div class="circle" id="section31">
+          <img src="https://cdn.storeden.net/secache/63bff8a9be7ea058f12736d3" alt="Immagine rotonda">
+        </div>
+      </td>
+      <td class="text"><a href="Animazione.html">Animazione</a></td>
+    </tr>
+      <tr>
+      <td>
+        <div class="circle" id="section32">
+          <img src="https://cdn.storeden.net/secache/63bff8af00f220a02bc86b77" alt="Immagine rotonda">
+        </div>
+      </td>
+      <td class="text"><a href="Avventura.html">Avventura</a></td>
+    </tr>
+      <tr>
+      <td>
+        <div class="circle" id="section33">
+          <img src="https://cdn.storeden.net/secache/63bff8cb5fb8e0eb8fc5661d" alt="Immagine rotonda">
+        </div>
+      </td>
+      <td class="text"><a href="primo soccorso.html">Primo soccorso</a></td>
+    </tr>
+      <tr>
+      <td>
+        <div class="circle" id="section34">
+          <img src="https://cdn.storeden.net/secache/63bff8bf00f220722bc86b77" alt="Immagine rotonda">
+        </div>
+      </td>
+      <td class="text"><a href="Meteo.html">Meteo</a></td>
+    </tr>
+      <tr>
+      <td>
+        <div class="circle" id="section35">
+          <img src="https://cdn.storeden.net/secache/63bff87700f2201227c86b7f" alt="Immagine rotonda">
+        </div>
+      </td>
+      <td class="text"><a href="Giornalismo.html">Giornalismo</a></td>
+    </tr>
+      <tr>
+      <td>
+        <div class="circle" id="section36">
+          <img src="https://cdn.storeden.net/secache/63bff8595fb8e0878ec5661b" alt="Immagine rotonda">
+        </div>
+      </td>
+      <td class="text"><a href="amante della musica.html">Amante della musica</a></td>
+    </tr>
+      <tr>
+      <td>
+        <div class="circle" id="section37">
+          <img src="https://cdn.storeden.net/secache/63bff86800f220da25c86b7e" alt="Immagine rotonda">
+        </div>
+      </td>
+      <td class="text"><a href="Collezionismo.html">Collezionsimo</a></td>
+    </tr>
+      <tr>
+      <td>
+        <div class="circle" id="section38">
+          <img src="https://cdn.storeden.net/secache/63bff87cbe7ea00bf12736d6" alt="Immagine rotonda">
+        </div>
+      </td>
+      <td class="text"><a href="Informatica.html">Informatica</a></td>
+    </tr>
+      <tr>
+      <td>
+        <div class="circle" id="section39">
+          <img src="https://cdn.storeden.net/secache/63bff88e00f2202c24c86b8a" alt="Immagine rotonda">
+        </div>
+      </td>
+      <td class="text"><a href="Lettura.html">Lettura</a></td>
+    </tr>
+      <tr>
+      <td>
+        <div class="circle" id="section40">
+          <img src="https://cdn.storeden.net/secache/63bff861be7ea012ea2736e3" alt="Immagine rotonda">
+        </div>
+      </td>
+      <td class="text"><a href="Astronomo.html">Astronomo</a></td>
+    </tr>
+  </table>
+    <div class="faq-container">
+    <div class="faq-item">
+      <div class="question" onclick="toggleAnswer(this)">Quale e' il significato dei bordi?</div>
+      <div class="answer">- Il verde sta per lo sviluppo fisico;<br>- Il rosso per il senso civico;<br>- Il giallo per l'abilita' manuale;<br>- Il blu per il carattere</div>
+    </div>
+    <br>
+    <div class="faq-item">
+      <div class="question" onclick="toggleAnswer(this)">Quale e' il significato dello sfondo?</div>
+      <div class="answer">Il giallo indicano abilita', hobby, interessi. Invece, quelle verdi, sono riferite al mondo scout</div>
+    </div>
+    <br>
+    <div class="faq-item">
+      <div class="question" onclick="toggleAnswer(this)">Cosa sono le specialita' jolly?</div>
+      <div class="answer">Le specialita' jolly sono 4, una per ogni colore. In queste specialita' devi scegliere tu i punti che poi farai vedere al tuo capo reparto.</div>
+    </div>
+    <script>
+    function toggleAnswer(element) {
+      const answer = element.nextElementSibling;
+      answer.classList.toggle("active");
+    }
+  </script>
+</body>
+</html>

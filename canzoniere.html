@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #333;
+      background-color: #f0f0f0;
+    }
+
+/* Se hai parti specifiche della pagina in cui desideri regole di stile diverse,
+   puoi definire ulteriori selettori e regole qui. */
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+/* Puoi aggiungere ulteriori regole di stile per altri elementi del testo come liste,
+   citazioni, ecc. */
+
+/* Stili per migliorare l'accessibilità */
+:focus {
+  outline: none;
+}
+
+/* Stile per evidenziare il testo selezionato */
+::selection {
+  background-color: #007bff;
+  color: #fff;
+}
+
+
+    #menu {
+      width: 20%;
+      background-color: #f0f0f0;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    #content {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .section {
+      display: none;
+    }
+
+    .active {
+      display: block;
+    }
+
+    .gray-section {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 40%;
+      height: 100%;
+      background-color: rgb(74,73,73);
+      z-index: -1;
+    }
+    .moved-div {
+      margin-left: 70px;
+    }
+  </style>
+</head>
+<body>
+  <div style="background-color: rgb(210,213,213)" id="menu">
+    <ul>
+      <h3>Menu'</h3>
+      <li><a href="#section1" onclick="showSection('section1')">Al fuoco di bivacco</a></li>
+      <li><a href="#section2" onclick="showSection('section2')">L'avventura non finira'</a></li>
+      <li><a href="#section3" onclick="showSection('section3')">Avventure</a></li>
+      <li><a href="#section4" onclick="showSection('section4')">Scouting for boys</a></li>
+      <li><a href="#section5" onclick="showSection('section5')">Maschere</a></li>
+      <li><a href="#section6" onclick="showSection('section6')">Canto del tramonto</a></li>
+      <li><a href="#section7" onclick="showSection('section7')">Canto dell'addio</a></li>
+      <li><a href="#section8" onclick="showSection('section8')">Caramba</a></li>
+      <li><a href="#section9" onclick="showSection('section9')">Favole</a></li>
+      <li><a href="#section10" onclick="showSection('section10')">Io so a memoria il morse</a></li>
+      <li><a href="#section11" onclick="showSection('section11')">Un falco nel cielo</a></li>
+      <li><a href="#section12" onclick="showSection('section12')">Buonanotte fratellino</a></li>
+      <li><a href="#section13" onclick="showSection('section13')">C'e' avventura</a></li>
+      <li><a href="#section14" onclick="showSection('section14')">Al chiaror del mattin</a></li>
+      <li><a href="#section15" onclick="showSection('section15')">Il vascello fantasma</a></li>
+      <li><a href="#section16" onclick="showSection('section16')">Canto dell'amicizia</a></li>
+      <li><a href="#section17" onclick="showSection('section17')">Sotto il bambù</a></li>
+      <li><a href="#section18" onclick="showSection('section18')">Prendi un emozione</a></li>
+      <li><a href="#section19" onclick="showSection('section19')">Come un pittore</a></li>
+      <li><a href="#section20" onclick="showSection('section20')">Bans</a></li>
+    </ul>
+  </div>
+  <div class="moved-div" class="gray-section" id="content">
+    <div id="section1" class="section active">
+      <h2>Al fuoco di bivacco</h2>
+      <p>Al fuoco di bivacco tutti quanti siam raccolti,<br>
+la luce della fiamma rischiara i nostri volti.<br>
+Da quella fiamma pura scaturisce una scintilla:<br>
+e' la fede di B.-P.<br>
+Sempre avanti esploratrici, esploratori<br>
+sempre avanti i nostri cuori, i nostri cuori.<br>
+Tutti gli scout sono fratelli<br>
+e cantiam sempre cosi': Jamboree!<br>
+Dal cielo ci sorridono e ci guardano le stelle,<br>
+son gaie e scintillanti, ci fan da sentinelle,<br>
+ma una che fra tutte si distingue la piu' bella:<br>
+e' la fede di B.-P.<br>
+Sempre avanti esploratrici, esploratori<br>
+sempre avanti i nostri cuori, i nostri cuori.<br>
+Tutti gli scout sono fratelli<br>
+e cantiam sempre cosi': Jamboree!<br>
+L'esploratore e' forte sia nel cuor che nella mente,<br>
+la sua parola e' sacra, non sta senza far niente;<br>
+egli e' di buon umore e si arrangia a far di tutto:<br>
+e' la legge di B.-P.<br>
+Sempre avanti esploratrici, esploratori<br>
+sempre avanti i nostri cuori, i nostri cuori.<br>
+Tutti gli scout sono fratelli<br>
+e cantiam sempre cosi': Jamboree!<br></p>
+      <br>
+      <br>
+    </div>
+    <div id="section2" class="section active">
+      <h2>L'avventura non finira'</h2>
+    <p>Questo giorno e' terminato<br>
+e la luna sembra averlo scacciato.<br>
+Caro amico io sono contento,<br>
+spero duri questo nostro momento.<br>
+No, non puo' finire qui quest'avventura.<br>
+No, non puo' finire qui quest'avventura.<br>
+Le lanterne ad una ad una si accendono<br>
+e le voci piano piano si spengono,<br>
+tutti quanti ora stanno ad ascoltare<br>
+cio' che il cielo ci vuole narrare.<br>
+No, non puo' finire qui quest'avventura.<br>
+No, non puo' finire qui quest'avventura.<br>
+Questa notte io voglio cantare,<br>
+questa notte io con te voglio stare.<br>
+L'avventura no non finira'<br>
+perche' domani un altro giorno sara'.<br>
+No, non e' finita qui quest'avventura.<br>
+No, non e' finita qui quest'avventura.<br>
+Buonanotte, buonanotte, buonanotte...</p>
+    </div>
+    <div id="section3" class="section active">
+      <h2>Avventure</h2>
+    <p>Nascon le emozioni, passando insieme il tempo<br>
+danno forza ai sogni, nella vita di ogni giorno<br>
+lasceranno un segno, lungo il tuo cammino<br>
+passo dopo passo, arriverai lontano<br>
+Vivendo l'avventura nella branca E<br>
+vivendo ogni giorno ogni giorno con te<br>
+voglio vivere l'avventura nella branca E<br>
+voglio viverla ogni giorno ogni giorno con te<br>
+La montagna mi sovrasta, ma fino in cima la voglio vivere<br>
+e' vero sono stanco, ma ho ancora energie da vendere<br>
+stringendoci la mano, camminando insieme<br>
+mi sentiro' al tuo fianco, la tua forza mi sostiene<br>
+Rit. Vivendo l'avventura nella branca E...<br>
+Fratello ti ho trovato, nell'attimo di un gioco<br>
+col tempo ti ho scoperto, cantando intorno a un fuoco<br>
+il buio ci spaventa, ma non ci puo' fermare<br>
+e' una sfida interminabile, che voglio continuare.<br>
+Quello che sento dentro mi prende e mi fa volare<br>
+oltre ogni vallata, sempre senza paura<br>
+non mi voglio arrendere, raggiungero' anche l'orizzonte<br>
+ed ogni sera ti stringero', in un abbraccio senza fine<br>
+Vivendo l'avventura nella branca E...
+</p>
+    </div>
+    <div id="section4" class="section active">
+      <h2>Scouting for boys</h2>
+    <p>Eravamo ragazzi ancora<br>
+Con il tempo aperto davanti<br>
+I giorni piu' lunghi con i calzoni corti<br>
+A caccia di vento i semplici canti<br>
+La carta e la colla insieme<br>
+Incrociare due canne piu' forti<br>
+Legate allo spago le nostre speranze<br>
+Nei nostri aquiloni i sogni mai morti<br>
+Si alzano ora in alto<br>
+Piu' in alto di allora le danze<br>
+Restare confusi il tempo ti afferra<br>
+Scommetter sul mondo ma senza arroganza<br>
+La testa nel cielo e' vero<br>
+Ma il camminare ti entra da terra<br>
+E pronti a partire rischiare la strada<br>
+I fiori piu' veri non son quelli di serra<br>
+Va piu' in su, piu' in la'<br>
+Contro vento e' lotta dura ma<br>
+Tendi lo spago e se sta a cuore a noi<br>
+Non e' vana speranza cambiera'<br>
+Oltre la siepe va<br>
+e' il potere all'indifferenza<br>
+Indifferenza che il potere fa ladri<br>
+La terra ormai scossa dagli atomi pazzi<br>
+Denaro trionfante schiaccia grida di madri<br>
+E' ancora la grande corsa<br>
+Per gli stupidi armati razzi<br>
+In rialzo i profitti piu' disoccupati<br>
+E c'e' sempre chi dice: "State buoni ragazzi"<br>
+E' nascosta rassegnazione<br>
+Dietro "grandi" progetti mancati<br>
+Non e' certo piu' il tempo di facili sogni<br>
+I nostri aquiloni hanno i fili bloccati<br>
+Ma vediamo piu' acuti e nuovi<br>
+Affiorare continui bisogni<br>
+Solidali ci chiama la citta' dell'uomo<br>
+Sporcarsi le mani in questo mare e' un segno<br>
+Va piu' in su, piu' in la'<br>
+Contro vento e' lotta dura ma<br>
+Tendi lo spago e se sta a cuore a noi<br>
+Non e' vana speranza cambiera'<br>
+Oltre la siepe va<br>
+Ed ancora piu' in alto vola<br>
+Prende quota sorvola vallate<br>
+Portato dai venti ma le idee le ha chiare<br>
+Di certe nubi si muore di acque inquinate<br>
+Non cantare per evasione<br>
+Canta solo se vuoi pensare<br>
+Il fine nel mezzo come il grano nel seme<br>
+Un progresso per l'uomo dobbiamo imparare<br>
+Meccanismi perversi fuori<br>
+Meccanismi che dentro teme<br>
+Avere-sembrare ti prendono a fondo<br>
+Cercare se stessi e' piu' dura ma insieme<br>
+E' lottare per realizzare<br>
+Un amore che sia fecondo<br>
+Via le porte blindate chiuse sugli egoismi<br>
+Un uomo e una donna spalancati sul mondo<br>
+Va piu' in su, piu' in la'<br>
+Contro vento e' lotta dura ma<br>
+Tendi lo spago e se sta a cuore a noi<br>
+Non e' vana speranza cambiera'<br>
+Oltre la siepe va<br>
+E spingendo di nuovo i passi<br>
+Sulle strade senza fare rumore<br>
+Non teme il vento con la pioggia e col sole<br>
+"Gia' e non ancora" seguire l'amore<br>
+E' un tesoro nascosto cerca<br>
+E' sepolto giu' nelle gole<br>
+E' paura che stringe quando siamo vicini<br>
+A chi in vita sua mai ha avuto parole<br>
+E lo scopri negli occhi e' vero<br>
+In quegli occhi tornati bambini<br>
+Han saputo rischiare: "Lascia tutto se vuoi"<br>
+Sulla sua strada andare scordare i tuoi fini<br>
+Un aquilone nel vento chiama<br>
+Tendi il filo e' ora! Puoi!<br>
+Le scelte di oggi in un mondo che cambia<br>
+Pronti a servire e' ancora: "Scouting for boys"<br>
+Va piu' in su, piu' in la'<br>
+Contro vento e' lotta dura ma<br>
+Tendi lo spago e se sta a cuore a noi<br>
+Non e' vana speranza cambiera'<br>
+Oltre la siepe va
+</p>
+    </div>
+    <div id="section5" class="section active">
+      <h2>Maschere</h2>
+    <p>In un mondo di maschere,<br>
+dove sembra impossibile<br>
+riuscire a sconfiggere<br>
+tutto cio' che annienta l'uomo;<br>
+il potere la falsita',<br>
+la ricchezza l'avidita',<br>
+sono mostri da abbattere,<br>
+noi pero' non siamo soli.<br>
+Canta con noi, batti le mani<br>
+alzale in alto,<br>
+muovile al ritmo del canto;<br>
+stringi la mano del tuo vicino<br>
+e scoprirai<br>
+che e' meno duro il cammino cosi'.<br>
+Ci hai promesso il tuo Spirito,<br>
+lo sentiamo in mezzo a noi<br>
+e cosi' possiamo credere<br>
+che ogni cosa puo' cambiare;<br>
+non possiamo piu' assistere<br>
+impotenti ed attoniti<br>
+perche' siam responsabili<br>
+della vita intorno a noi.<br>
+Canta con noi, batti le mani<br>
+alzale in alto,<br>
+muovile al ritmo del canto;<br>
+stringi la mano del tuo vicino<br>
+e scoprirai<br>
+che e' meno duro il cammino cosi'.<br>
+</p>
+    </div>
+    <div id="section6" class="section active">
+      <h2>Il canto del tramonto</h2>
+    <p>Signor, tra le tende schierati per salutar il di' che muor,<br>
+le note di canti accorati leviamo a Te calde d'amor.<br>
+Ascolta Tu l'umil preghiera che d'aspro suol s'ode innalzar<br>
+a Te cui mancava alla sera un tetto ancor per riposar.<br>
+Chiedon sol tutti i nostri cuori a Te sempre meglio servir.<br>
+Genufletton qui nel pian i Tuoi esploratori:<br>
+Tu dal ciel benedicili Signor.
+</p>
+    </div>
+    <div id="section7" class="section active">
+      <h2>Canto dell'addio</h2>
+    <p>E' l'ora dell'addio, fratelli, e' l'ora di partir,<br>
+il canto si fa triste, e' ver, partire e' un po' morir.<br>
+Rit. Ma noi ci rivedremo ancor, ci rivedremo un di'.<br>
+Arrivederci allor, fratelli, arrivederci, si'.<br>
+Formiamo una catena con le mani nelle man,<br>
+uniamoci (stringiamoci) l'un l'altro prima di partir (tornar) lontan.<br>
+Rit. Ma noi ci rivedremo ancor, ci rivedremo un di'.<br>
+Arrivederci allor, fratelli, arrivederci, si'.
+</p>
+    </div>
+    <div id="section8" class="section active">
+      <h2>Caramba</h2>
+    <p>Lassu' in cima al Monte Nero<br>
+c'e' una piccola caverna.<br>
+Ci son dodici briganti<br>
+al chiaror di una lanterna.<br>
+Caramba, beviamo del whisky!<br>
+Caramba, beviamo del gin!<br>
+E tu non dar retta al cuore<br>
+che tutto passera'!<br>
+Ma dei dodici briganti<br>
+uno solo resta muto.<br>
+Ha il bicchiere ancora pieno,<br>
+come mai non ha bevuto?<br>
+Caramba, beviamo del whisky!<br>
+Caramba, beviamo del gin!<br>
+E tu non dar retta al cuore<br>
+che tutto passera'!<br>
+Ma non puo' dimenticare<br>
+il brigante la sua bella:<br>
+i suoi occhi come il mare,<br>
+la sua bocca tanto bella.<br>
+Caramba, beviamo del whisky!<br>
+Caramba, beviamo del gin!<br>
+E tu non dar retta al cuore<br>
+che tutto passera'!<br>
+Finalmente son sposati<br>
+il brigante e la sua bella.<br>
+i suoi occhi come il mare,<br>
+la sua bocca tanto bella.<br>
+Caramba, beviamo del whisky!<br>
+Caramba, beviamo del gin!<br>
+E tu non dar retta al cuore<br>
+che tutto passera'!<br>
+</p>
+    </div>
+    <div id="section9" class="section active">
+      <h2>Favole</h2>
+    <p>Quante volte siamo stati con gli occhi spalancati a sentire<br>
+favole incantate o storie strane di maghi e fate.<br>
+Chi di noi non e' mai stato rapito dalle storie ascoltate<br>
+e viaggiato sulle strade incredibili immaginate.<br>
+Favole, storie dove e' facile volare via,<br>
+sopra una nuvola con le ali della fantasia.<br>
+Un abbraccio sincero a un amico che parte e che sa<br>
+(che prima o poi ci si rincontrera')<br>
+a scordare.<br>
+Dormire sotto le tende e sottovoce stare fermi a parlare<br>
+(di mille altre avventure.)<br>
+Favole che se vogliamo noi possiamo sentire<br>
+(se si incomincia solo a...)<br>
+Credere, credere, credere, credere che...<br>
+basta poco sai, anche un canto e poi tu vedrai<br>
+che crescere, vivere, ridere noi insieme non<br>
+e' favola e in piu' se canti anche tu ci sara'<br>
+la voglia di stare stasera<br>
+tutti uniti in questa storia vera<br>
+finche' il giorno si prende la notte<br>
+per consegnarla ad una stella nascente.
+</p>
+    </div>
+    <div id="section10" class="section active">
+      <h2>Io so a memoria il morse</h2>
+    <p>Fra campi estivi e uscite la domenica<br>
+Sangiorgi, rally, Jamboree<br>
+sono undici anni e chi se li dimentica<br>
+che sono entrato negli scout<br>
+Ed ho imparato molte cose utili<br>
+che posso usare nella quotidianita'<br>
+mi rendo conto non son cose semplici<br>
+pero' ho una frana di specialita'<br>
+Oooh-Oh... Io so a memoria il morse!<br>
+Sotto il cuscino ho il coltellino svizzero<br>
+gli scarponcini sul como'<br>
+e la mia tenda canadese in camera<br>
+l'ho picchettata dentro la moquette<br>
+Alla grondaia ho appeso una carrucola<br>
+ogni mattina mi trasporta giu'<br>
+sono in divisa anche quando nevica<br>
+e con le maniche tirate su<br>
+Oooh-Oh... Io so a memoria il morse!<br>
+Sono un maestro di arte pionieristica<br>
+anche Mac Gyver lo confermera'<br>
+con pochi pali e con corda di canapa<br>
+mi sono fatto la radio e la Tivu'<br>
+Non faccio un passo senza la mia bussola<br>
+e la mia scuola e' a 30 gradi est<br>
+ho acceso il fuoco accanto alla mia amaca<br>
+pane alla trapper e moka di caffe'<br>
+Oooh-Oh... Io so a memoria il morse!<br>
+Sono uno scout ma anche un gran romantico<br>
+mi sono messo sotto casa sua<br>
+e le ho trasmesso un "ti amo" semaforico<br>
+pero' i vicini mi han cacciato via<br>
+Mia madre dice che sono un caso clinico<br>
+ho una scoutite di rara gravita'<br>
+aspetta mamma non chiamare il medico<br>
+che devo uscire, mi aspettano per l'hike<br>
+Oooh-Oh... Io so a memoria il morse!
+
+</p>
+    </div>
+    <div id="section11" class="section active">
+      <h2>Un falco nel cielo</h2>
+    <p>Un falco volava nel cielo un mattino,<br>
+ricordo quel tempo quando ero bambino.<br>
+Io lo seguivo e nel rosso tramonto<br>
+dall'alto di un monte scoprivo il mio mondo.<br>
+E allora eha, eha, eha!<br>
+E allora eha, eha, eha!<br>
+Eha, eha, eha, eha, eha, eha, eh!<br>
+Fiumi, boschi e mari senza confine,<br>
+i chiari orizzonti, le verdi colline.<br>
+E un giorno partivo per un lungo sentiero<br>
+partivo ragazzo e tornavo guerriero.<br>
+E allora eha, eha, eha!<br>
+E allora eha, eha, eha!<br>
+Eha, eha, eha, eha, eha, eha, eh!<br>
+Le tende rosse vicino al torrente,<br>
+la vita felice tra la mia gente.<br>
+E quando il mio arco colpiva lontano<br>
+sentivo l'orgoglio di essere indiano.<br>
+E allora eha, eha, eha!<br>
+E allora eha, eha, eha!<br>
+Eha, eha, eha, eha, eha, eha, eh!<br>
+Fiumi, boschi e mari mossi dal vento,<br>
+lune su lune, i miei capelli d'argento.<br>
+E quando era l'ora dell'ultimo sonno<br>
+lasciavo il mio campo per non farvi ritorno.<br>
+E allora eha, eha, eha!<br>
+E allora eha, eha, eha!<br>
+Eha, eha, eha, eha, eha, eha, eh!<br>
+Un falco volava nel cielo un mattino<br>
+e verso il sole mi indicava il cammino.<br>
+Un falco che un giorno e' stato colpito,<br>
+ma non e' morto, e' solo ferito.<br>
+E allora eha, ...
+</p>
+    </div>
+    <div id="section12" class="section active">
+      <h2>Buonanotte fratellino</h2>
+    <p>Il sole e' ormai lontano, il cielo si fa scuro,<br>
+la luna si alza lenta, regina di una notte<br>
+che luccica di stelle che sembrano danzare<br>
+e dirci che e' l'ora di dormire.<br>
+Se senti una voce come un sussurro lieve<br>
+nel primo sonno dolce della tua notte, sai<br>
+siam noi che dalle tende in coro attorno al fuoco<br>
+ti auguriam: "Buonanotte fratellino".<br>
+Dormi, il tuo corpo e' stanco e deve riposare.<br>
+Dormi, il tuo sonno e' dolce come i tuoi grandi sogni.<br>
+Meraviglioso il mondo che riesci ad inventare.<br>
+Non sentirti mai grande per fantasticare.<br>
+Se senti una voce come un sussurro lieve<br>
+nel primo sonno dolce della tua notte, sai<br>
+siam noi che dalle tende in coro attorno al fuoco<br>
+ti auguriam: "Buonanotte fratellino".<br>
+</p>
+    </div>    
+    <div id="section13" class="section active">
+      <h2>C'e' avventura</h2>
+    <p>Sveglia in piedi, son le sette del mattino<br>
+Col mio foulard al collo, lo zaino in confusione<br>
+Cucina da rifare, passami il cordino<br>
+Siamo in ritardo dai, di corsa al pennone<br>
+Mille le voci attorno a noi ma con la stessa
+intensita'<br>
+Lungo il sentiero cantando la stessa canzone non
+ci pesera'<br>
+Anche se la bussola e' con me<br>
+Al campo nazionale mi voglio perdere<br>
+Anche se la strada si fa dura<br>
+Allaccia gli scarponi inizia l'av-ven-tu-ra<br>
+C'e' avventura.<br>
+Sto in equilibrio sopra un ponte tibetano<br>
+Se cado mi rialzo e tu mi dai la mano.<br>
+Accendo i boschi con la voglia di avventura<br>
+E nel mio cuore il fuoco non fa piu' paura<br>
+Mille le voci attorno a noi ma con la stessa<br>
+intensita'<br>
+Lungo il sentiero cantando la stessa canzone non
+ci pesera'<br>
+Anche se la bussola e' con me<br>
+Al campo nazionale mi voglio perdere<br>
+Anche se la strada si fa dura<br>
+Allaccia gli scarponi inizia l'av-ven-tu-ra<br>
+C'e' avventura.<br>
+Eeeee mi voglio perdere<br>
+Eeeee il sole sorge<br>
+Eeeee la mia pattuglia c'e'
+Eeeee
+Anche se la bussola e' con me<br>
+Al campo nazionale mi voglio perdere<br>
+Anche se la strada si fa dura<br>
+Allaccia gli scarponi inizia l'av-ven-tu-ra<br>
+C'e' avventura.<br>
+Guarda lontano eeeee c'e' avventura<br>
+Oltre la traccia eeeee c'e' avventura<br>
+Sotto la pioggia eeeee c'e' avventura<br>
+Sempre pronti eeeee pronti all'avventura<br>
+C'e' Avventura<br>
+C'e' Avventura<br>
+C'e' Avventura<br>
+Pronti all'avventura.
+</p>
+    </div>  
+    <div id="section14" class="section active">
+      <h2>Al chiaror del mattin</h2>
+    <p>Al chiaror del mattin, al chiaror del mattin,<br>
+ci sveglia la canzon, ci sveglia la canzon,<br>
+Al chiaror del mattin, al chiaror del mattin,<br>
+ci sveglia la canzon: e' sorto il Sol!<br>
+Su leviam, su leviam,<br>
+Su leviam, su leviam,<br>
+per avere il Sol basta ridere...<br>
+Su leviam, su leviam,<br>
+Su leviam, su leviam,<br>
+non e' tempo di esitar!<br>
+Se la pioggia cadra', se la pioggia cadra',<br>
+e tutto bagnera', e tutto bagnera',<br>
+Se la pioggia cadra', se la pioggia cadra',<br>
+piu' divertente ancor sara'!<br>
+Su leviam, su leviam,<br>
+Su leviam, su leviam,<br>
+non e' tempo di esitar!<br>
+Se la neve cadra', se la neve cadra',<br>
+e tutto imbianchera' e tutto imbianchera',<br>
+se la neve cadra', se la neve cadra',<br>
+piu' divertente ancor sara'!<br>
+Su leviam, su leviam,<br>
+Su leviam, su leviam,<br>
+non e' tempo di esitar!<br>
+E se il vento verra', e se il vento verra',<br>
+e tutto spazzera', e tutto spazzera',<br>
+e se il vento verra', e se il vento verra',<br>
+piu' divertente ancor sara'!
+</p>
+    </div>  
+    <div id="section15" class="section active">
+      <h2>Il vascello fantasma</h2>
+    <p>Pende un uomo dal pennone,<br>
+tutto nero di catrame,<br>
+non e' certo un buon boccone<br>
+per i corvi che hanno fame.<br>
+Pa-zum, pappa-zum,<br>
+Pa-pa-pa-pa-pa zack!<br>
+Cinque teschi tutti neri<br>
+stan sul cassero di prua:<br>
+son dei cinque bucanieri<br>
+che son morti alla tortura.<br>
+Pa-zum, pappa-zum,<br>
+Pa-pa-pa-pa-pa zack!<br>
+Venti ombre tutte nere<br>
+vengon su dal boccaporto:<br>
+sono venti schiavi neri<br>
+che son morti nel trasporto.<br>
+Pa-zum, pappa-zum,<br>
+Pa-pa-pa-pa-pa zack!<br>
+Sulla tolda biancheggianti<br>
+stan tre scheletri a ballare:<br>
+sono i resti dei briganti<br>
+giustiziati in alto mare.<br>
+Pa-zum, pappa-zum,<br>
+Pa-pa-pa-pa-pa zack!<br>
+Un cadavere inchiodato<br>
+alla prua sottovento:<br>
+e' un ribelle che ha pagato<br>
+con la morte il tradimento.<br>
+Pa-zum, pappa-zum,<br>
+Pa-pa-pa-pa-pa zack!<br>
+Inchiodato al gabinetto<br>
+sta il nostromo maledetto,<br>
+che ha pagato con la vita<br>
+per averla fatta a letto.<br>
+Pa-zum, pappa-zum,<br>
+Pa-pa-pa-pa-pa zack!<br>
+Sulla cassa posta a poppa<br>
+stan tre scheletri a giocare.<br>
+Come premio c'e' una coppa<br>
+ch'era il teschio del compare.<br>
+Pa-zum, pappa-zum,<br>
+Pa-pa-pa-pa-pa zack!<br>
+Se una notte tutta scura<br>
+sentirete un gran lamento<br>
+e' la voce di Tortuga<br>
+morto in ammutinamento.<br>
+Pa-zum, pappa-zum,<br>
+Pa-pa-pa-pa-pa zack!<br>
+Coricandovi stanotte<br>
+sentirete un sordo tonfo<br>
+e' il fantasma del vascello<br>
+che reclama il suo trionfo.<br>
+Pa-zum, pappa-zum...
+</p>
+    </div>
+    <div id="section16" class="section active">
+      <h2>Canto dell'amicizia</h2>
+      <p>In un mondo di maschere, dove sembra impossibile<br>
+        riuscire a sconfiggere tutto ciò che annienta l’uomo:<br>
+        Il potere e la falsità, la violenza e l’avidità<br>
+        sono cose da abbattere. Noi però non siamo soli.<br>
+        <br>
+        Canta con noi, batti le mani,<br>
+        alzale in alto, muovile al ritmo del canto.<br>
+        Stringi la mano del tuo vicino<br>
+        e scoprirai che è meno duro il cammino così.<br>
+        <br>
+        Ci ha donato il suo spirito, lo sentiamo è in mezzo a noi<br>
+        e perciò possiam credere che ogni cosa può cambiare.<br>
+        Non possiamo più assistere impotenti ed attoniti,<br>
+        perché siam responsabili della vita intorno a noi.<br>
+        <br>
+        Canta con noi, batti le mani,<br>
+        alzale in alto, muovile al ritmo del canto.<br>
+        Stringi la mano del tuo vicino<br>
+        e scoprirai che è meno duro il cammino così.<br>
+        <br>
+      </p>
+
+    </div>
+    <div id="section17" class="section active">
+      <h2>Sotto il bambù</h2>
+      <p>Sotto il bambù, al tempo che fu,<br>
+        c'era un pirata che ormai non c'è più.<br>
+        Gli avevano detto dov'era il tesoro:<br>
+        vicino alla pianta del pomodoro.<br>
+        Non trovò niente e il vecchio pirata<br>
+        non potè altro che far l'insalata.<br>
+        <br>
+        Sotto il bamba, sotto il bu,<br>
+        sotto il mio bambù. (2 volte)<br>
+        <br>
+        Sotto il bambù, al tempo che fu,<br>
+        c'era un mercante che ormai non c'è più.<br>
+        Vendeva tutto, non gli restò niente,<br>
+        nemmeno il cuore, nemmeno la mente.<br>
+        Un giorno ebbe fame, ma il pane era amaro<br>
+        e si mangiò tutto quanto il denaro.<br>
+        <br>
+        Sotto il bamba, sotto il bu,<br>
+        sotto il mio bambù. (2 volte)<br>
+        <br>
+        Sotto il bambù, al tempo che fu,<br>
+        c'era un profeta che ormai non c'è più.<br>
+        Parlava del cielo, parlava del fuoco,<br>
+        noi l'ascoltammo forse un po' poco.<br>
+        E larga la foglia e stretta la via,<br>
+        dite la vostra che ho detto la mia.<br>
+        <br>
+        Sotto il bamba, sotto il bu,<br>
+        sotto il mio bambù. (2 volte)<br>
+    </div>
+    <div id="section18" class="section active">
+      <h2>Prendi un emozione</h2>
+      <p>Certe volte il viso cambia colore<br>
+        Ed il cuore prende velocità<br>
+        Nella pancia c'è qualcosa di strano<br>
+        Non è fame, ma chissà che sarà<br>
+        Cose che ti fanno rabbrividire<br>
+        O ti mettono una fifa blu<br>
+        Un saluto che ti fa balbettare<br>
+        Risatine che non smettono più<br>
+        Se succede che non riesci a stare fermo<br>
+        Aspettando qualche novità<br>
+        Se la bocca più non smette di parlare<br>
+        Quando scoppi per la felicità<br>
+        Prendi un'emozione, chiamala per nome<br>
+        Trova il suo colore e che suono fa<br>
+        Prendila per mano, seguila pian piano<br>
+        Senti come nasce, guarda dove va<br>
+        Prendi un'emozione e non mandarla via<br>
+        Se ci vuoi giocare, fai cambio con la mia<br>
+        Puoi spiegarla a chi non la sa<br>
+        E tutta la tua vita vedrai<br>
+        Un'emozione sarà<br>
+        Le emozioni sono l'arcobaleno<br>
+        Che colora il cielo dentro di noi<br>
+        Sono nuvole, sono il sereno<br>
+        Sono il sale e il pepe di ciò che fai<br>
+        C'è la rabbia che non riesci a capire<br>
+        E non sai se poi ti passerà<br>
+        Ma davvero basta solo parlare<br>
+        E la soluzione si troverà<br>
+        Se le cose nuove fanno un po' paura<br>
+        Tira fuori la curiosità<br>
+        Ogni giorno è davvero un'avventura<br>
+        Il domani ti sorprenderà<br>
+        Prendi un'emozione, chiamala per nome<br>
+        Trova il suo colore e che suono fa<br>
+        Prendila per mano, seguila pian piano<br>
+        Senti come nasce, guarda dove va<br>
+        Prendi un'emozione e non mandarla via<br>
+        Se ci vuoi giocare, fai cambio con la mia<br>
+        Puoi spiegarla a chi non la sa<br>
+        E tutta la tua vita vedrai<br>
+        Qualche volta (Qualche volta)<br>
+        Non capisci (Non capisci)<br>
+        L'emozione che c'è dentro di te (Dentro di te)<br>
+        Forse è solo (Forse è solo)<br>
+        Perché cresci<br>
+        E con occhi sempre nuovi il mondo scoprirai<br>
+        Prendi un'emozione, chiamala per nome<br>
+        Trova il suo colore e che suono fa<br>
+        Prendila per mano, seguila pian piano<br>
+        Senti come nasce, guarda dove va<br>
+        Prendi un'emozione e non mandarla via<br>
+        Se ci vuoi giocare, fai cambio con la mia<br>
+        Puoi spiegarla a chi non la sa<br>
+        E tutta la vita vedrai<br>
+        Un'emozione sarà</p>
+    </div>
+    <div id="section19" class="section active">
+      <h2>Come un pittore</h2>
+      <p>Ciao, semplicemente, ciao<br>
+        Difficile trovar parole molto serie<br>
+        Tenterò di disegnare<br>
+        Come un pittore<br>
+        Farò in modo<br>
+        Di arrivare dritto al cuore<br>
+        Con la forza del colore<br>
+        Guarda senza parlare<br>
+        Azzurro come te<br>
+        Come il cielo e il mare<br>
+        E giallo come luce del sole<br>
+        Rosso come le cose che mi fai<br>
+        Provare<br>
+        Ciao, semplicemente, ciao<br>
+        Disegno l'erba verde come la speranza<br>
+        E come frutta ancora acerba<br>
+        E adesso un po' di blu<br>
+        Come la notte<br>
+        Il bianco come le sue stelle<br>
+        Con le sfumature gialle<br>
+        E l'aria puoi solo respirala<br>
+        Azzurro come te<br>
+        Come il cielo e il mare<br>
+        E giallo come luce del sole<br>
+        Rosso come le cose che mi fai<br>
+        Provare<br>
+        Per le tempeste, non ho il colore<br>
+        Con quel che resta, disegno un fiore<br>
+        Ora che è estate, ora che è amore<br>
+        Azzurro come te<br>
+        Come il cielo e il mare<br>
+        E giallo come luce del sole<br>
+        Rosso come le cose che mi fai<br>
+        Provare<br>
+    </div>
+    <div id="section20" class="section active">
+      <h2>Bans</h2>
+    <p>Oh Alele<br>
+Blue jeans<br>
+Padre abramo<br>
+Una zia che sta a Forlì<br>
+Bufaletto<br>
+Del folletto
+</p>
+    </div>
+    </div>  
+  <script>
+    function showSection(sectionId) {
+      var sections = document.querySelectorAll('.section');
+      for (var i = 0; i < sections.length; i++) {
+        sections[i].classList.remove('active');
+      }
+      var section = document.getElementById(sectionId);
+      section.classList.add('active');
+    }
+  </script>
+</body>
+</html>

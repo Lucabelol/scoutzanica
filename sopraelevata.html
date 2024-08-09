@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moltiplicazione per 3</title>
+    <style>
+    body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #f0f0f0;
+    color: #333;
+    }
+    h1{
+    color: black
+    }
+    </style>
+</head>
+<body>
+    <h1>Calcola quanti pali servono per fare una sopraelevata</h1>
+    <label for="numero">Inserisci il numero di sopraelevate da fare:</label>
+    <input type="text" id="numero" placeholder="Inserisci un numero">
+    <button onclick="calcola()">Calcola</button>
+    <p id="risultato"></p>
+    <br>
+    <br>
+    <h1>Calcola quante corde servono per fare una sopraelevata</h1>
+    <label for="numero1">Inserisci il numero di sopraelevate da fare:</label>
+    <input type="text" id="numero1" placeholder="Inserisci un numero">
+    <button onclick="Corde()">Calcola</button>
+    <p id="risultato2"></p>
+
+    <script>
+        function calcola() {
+            // Recupera il valore inserito nella text-box
+            var inputNumero = document.getElementById("numero").value;
+
+            // Converte il valore in un numero
+            var numero = parseFloat(inputNumero);
+
+            // Verifica se il valore è un numero valido
+            if (!isNaN(numero)) {
+                // Esegui la moltiplicazione per 3
+                var risultato = numero * 24;
+
+                a= numero * 4
+
+                // Mostra il risultato nella pagina
+                document.getElementById("risultato").textContent = "Servono: " + risultato + " pali da 4 " + " e " + a + " pali da 8 ";
+            } else {
+                // Se l'input non è un numero valido, mostra un messaggio di errore
+                document.getElementById("risultato").textContent = "Inserisci un numero valido.";
+            }
+
+        function Corde() {
+            // Recupera il valore inserito nella text-box
+            var inputNumero2 = document.getElementById("numero1").value;
+
+            // Converte il valore in un numero
+            var numero2 = parseFloat(inputNumero2);
+
+            // Verifica se il valore è un numero valido
+            if (!isNaN(numero2)) {
+                c= numero2 * 36
+
+                // Mostra il risultato nella pagina
+                document.getElementById("risultato2").textContent = "Servono: " + c + " corde ";
+            } else {
+                // Se l'input non è un numero valido, mostra un messaggio di errore
+                document.getElementById("risultato2").textContent = "Inserisci un numero valido.";
+            }
+        }
+    }
+    </script>
+
+</body>
+</html>
